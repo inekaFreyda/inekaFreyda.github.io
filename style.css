@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Cristik';
+    src: url('\fonts\Cristik.otf') format('otf'),
+         url('\fonts\Cristik.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #0a1817;
+    color: white;
+    height: 100vh;
+    width: auto;
+}
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 0;
+}
+
+.img1 {
+    height: 700px;
+    width: 700px;
+}
+
+.img2 {
+    display: block;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+}
+
+h1 {
+    font-family: 'Cristik', sans-serif;
+    font-size: 48px;
+    margin: 0;
+}
+
+.author {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.header {
+    font-family: 'Cristik', sans-serif;
+    text-align: center;
+    margin-top: 0;
+    text-shadow: 4px 4px 4px #184d55;
+    margin-bottom: 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    min-width: 300px;
+    margin: 0;
+}
+
+.content div{
+    flex-grow: 1;
+    width: 97.8%;
+    padding: 20px;
+}
+
+.content .intro{
+    background-color: #184d55;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.content .c1{
+    background-color: #2d7071;
+}
+
+.content .c2{
+    background-color: #41848d;
+}
+
+.content .c3{
+    background-color: #63b3ad;
+}
+
