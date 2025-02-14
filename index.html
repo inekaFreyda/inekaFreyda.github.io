@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Page</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script> </head>
+</head>
+<header>
+        <ul class="nav-links">
+            <li><a href="#intro">intro</a></a></li>
+            <li><a href="#python">python</a></li>
+            <li><a href="#java">java</a></li>
+            <li><a href="#csharp">c#</a></li>
+            <li><a href="#html">html</a></li>
+            <li><a href="#others">others</a></li>
+            <li><a href="#certs">certificates</a></li>
+        </ul>
+</header>
 <body>
     <div class="welcome">
         <div><img src="images/hello_world_ctto.gif" class="img1" alt="Hello World GIF"></div>
@@ -15,8 +26,7 @@
         </div>
     </div>
     <div class="content">
-
-        <div class="intro">
+        <div class="intro" id="intro">
             <h2 class="header"><i>Hello!</i><br>My name is Ineke Vrede G. Lumaad.</h2>
             <br><img src="images/2.png" class="img2" alt="Ineke Vrede G. Lumaad">
             <br><p>I am a BS in Information Systems student at Mapua Malayan Colleges Mindanao(MMCM).</p>
@@ -27,7 +37,7 @@
                     <br>─=≡Σ((( つ•̀ω•́)つ</p>
         </div>
 
-        <div class="c1">
+        <div class="c1" id="python">
             <div>
                 <h1 class="t3">Python</h1>
                 <p class="title"><b>Patient Record Management:</b><br>A Python-based Solution for
@@ -49,7 +59,7 @@
             </div>
         </div>
 
-        <div class="c2">
+        <div class="c2" id="java">
             <div class="img-container">
                 <div class="slide">
                     <img src="images/Java_SantinosPOSProj1.png" alt="Java Santino's POS Project 1">
@@ -71,7 +81,7 @@
             </div>
         </div>
 
-        <div class="c3">
+        <div class="c3" id="csharp">
             <div>
                 <h1 class="t3">C#</h1>
                 <p class="title"><b>MediCheck:</b><br>A Campus-based Clinic Medicine Availability and Reservation
@@ -79,20 +89,20 @@
             </div>
             <div class="img-container">
                 <div class="slide">
-                    <img src="images/C#_MediCheck4.png" class="i4" alt="C# MediCheck 4">
+                    <img src="/images/C#_MediCheck4.png" alt="C# MediCheck 4">
                 </div>
                 <div class="slide">
-                    <img src="images/C#_MediCheck6.png" class="i4" alt="C# MediCheck 6">
+                    <img src="/images/C#_MediCheck6.png" alt="C# MediCheck 6">
                 </div>
                 <div class="slide">
-                    <img src="images/C#_MediCheck7.png"  class="i4" alt="C# MediCheck 7">
+                    <img src="/images/C#_MediCheck7.png"  alt="C# MediCheck 7">
                 </div>
 
                 <button class="prev">❮</button>
                 <button class="next">❯</button>
             </div>
         </div>
-        <div class="c4">
+        <div class="c4" id="html">
             <div>
                 <h1 class="t1">HTML</h1>
                 <p class="title"><b>Explore PH Tours Website<br>Course Schedule 2nd Term S.Y. 2024-2025</b></p>
@@ -108,7 +118,7 @@
                     </div>
                 </div>
         </div>
-        <div class="c5">
+        <div class="c5" id="others">
             <div class="img-container">
                 <div class="slide">
                     <img src="images/Others_UpliftUProj1.png" alt="Uplift U Project 1">
@@ -128,7 +138,7 @@
                 <p class="title"><b>“UPLIFT; U”:</b><br>A Mental Health Awareness Application Prototype</p>
             </div>
         </div>
-        <div class="c6">
+        <div class="c6" id="certs">
             <div>
                 <h1 class="t2">Certificates</h1>
                 <p class="title">Various Workshops and Online Courses</p>
@@ -155,5 +165,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js" defer></script> 
 </body>
 </html>
