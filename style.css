@@ -1,27 +1,68 @@
 @font-face {
     font-family: 'Cristik';
-    src: url('\fonts\Cristik.otf') format('otf'),
-         url('\fonts\Cristik.ttf') format('ttf');
+    src: url('/fonts/Cristik.otf') format('otf'),
+         url('/fonts/Cristik.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 
-.nav-links{
+.nav, .nav1{
     display: flex;
+    justify-content: center;
     align-items: center;
-    background: #fff;
-    padding: 20px 15px;
-    /* border-radius: 12px; */
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-  }
-
-li{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    /* padding-left: 20px; */
-    padding-inline: 20px;
+    padding: 15px 0;
+    height: 50px;
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
 }
+
+.nav{
+    background: #0a1817;
+}
+
+.nav1 {
+    background: #184d55;
+}
+
+.nav3{
+    background: #30a19a;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 6px;
+}
+
+.nav-links li:nth-child(1) a:hover { background: #ff6b6b; color: #fff; }
+.nav-links li:nth-child(2) a:hover { background: #feca57; color: #fff; }
+.nav-links li:nth-child(3) a:hover { background: #48dbfb; color: #fff; }
+.nav-links li:nth-child(4) a:hover { background: #1dd1a1; color: #fff; }
+.nav-links li:nth-child(5) a:hover { background: #ff9ff3; color: #fff; }
+.nav-links li:nth-child(6) a:hover { background: #ffcc00; color: #fff; }
+.nav-links li:nth-child(7) a:hover { background: #5f27cd; color: #fff; }
+
+
 body{
     background-color: #0a1817;
     color: white;
@@ -60,6 +101,13 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
     margin:0;
+}
+
+.title1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin:0;
+    text-align: left;
 }
 
 .header {
@@ -110,6 +158,7 @@ h1 {
     height: 100vh;
     min-width: 300px;
     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to text */
 }
 
 .content div{
@@ -188,7 +237,7 @@ h1 {
     flex: 1;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 10px;
     padding: 20px;
@@ -213,6 +262,59 @@ img {
     border-radius: 10px;
 }
 
+.collage {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 50px;
+}
+.collage1 {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 50px;
+}
+.photo {
+    width: 250px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.photo1 { background-image: url('/images/medicheck1.png'); }
+.photo2 { background-image: url('/images/medicheck2.png'); }
+.photo3 { background-image: url('/images/medicheck3.png'); }
+.photo4 { background-image: url('/images/medicheck4.png'); }
+.photo5 { background-image: url('/images/medicheck5.png'); }
+.photo6 { background-image: url('/images/medicheck6.png'); }
+
+.photo7 { background-image: url('/images/Others_UpliftUProj1.png'); }
+.photo8 { background-image: url('/images/Others_UpliftUProj2.png'); }
+.photo9 { background-image: url('/images/Others_UpliftUProj3.png'); }
+
+.photo10 { background-image: url('/images/Cert_1.png'); }
+.photo11 { background-image: url('/images/Cert_2.png'); }
+.photo12 { background-image: url('/images/Cert_3.png'); }
+.photo13 { background-image: url('/images/Cert_4.png'); }
+.photo14 { background-image: url('/images/Cert_5.png'); }
+
+button {
+    font-size: 15px; /* Increases text size */
+    padding: 15px 30px; /* Adjusts button size */
+    margin: 10px; /* Adds spacing between buttons */
+    border: none;
+    border-radius: 8px;
+    background-color: #a03388; /* Default blue color */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #e93cb5; /* Darker blue on hover */
+    transform: scale(1.1); /* Slightly enlarges the button */
+}
 .i4{
     width: 100%;
     height: 100%;

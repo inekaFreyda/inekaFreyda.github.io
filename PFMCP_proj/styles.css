@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #3c5879; 
+    background-image: url("logo.png"); 
+    background-size: cover;
+    background-position: right center; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-attachment: fixed;
+    background-size: 500px 400px;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin-left: 10px;
+    margin-right: 30px;
+    align-items: flex-start;
+}
+
+.text-content {
+    flex: 1;
+   
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.access, .repo {
+    margin-top: 15px;
+}
+
+
+.button-holder {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.secondaryButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.secondaryButton:hover {
+    background-color: #45a049;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    width: 100%; 
+    margin-top: 40px; 
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.image-column {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-column img:hover {
+    transform: scale(1.05);
+}
+
+.list {
+    width: 100%;
+    margin-top: 40px; 
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list li {
+    color: white;
+    font-size: 18px;
+    margin: 5px 0;
+}
