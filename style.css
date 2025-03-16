@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-.nav, .nav1{
+.nav, .nav1, .nav3{
     display: flex;
     justify-content: center;
     align-items: center;
